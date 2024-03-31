@@ -1,0 +1,13 @@
+.idea/
+__pycache__/
+addresses.py
+calc_addresses.py
+decorators.py
+mem-rev.py
+memory_engine.py
+memorylib.py
+pitch.ipynb
+pitching_ai.py
+replicate_hit.py
+src/__pycache__/
+src/data/
