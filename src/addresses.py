@@ -11,7 +11,7 @@ pitcher_id = 0x80890ADA  # halfword
 pitcher_handedness = 0x80890B01  # byte 0 righty 1 lefty
 
 ### batter data ###
-batter_id = 0x80890972  # byte
+batter_id = 0x80890972  # halfword
 batter_handedness = 0x8089098b  # byte 0 righty 1 lefty
 batter_roster_id = 0x80890970  # halfword
 
@@ -73,3 +73,44 @@ bat_pos_z = 0x80890964
 ### contact event data ###
 contact_quality = 0x80890954
 contact_type = 0x808909A2
+
+
+# from memorylib import Dolphin
+# class Address:
+#     def __init__(self, addr, datatype, dolphin):
+#         self.addr = addr
+#         self.datatype = datatype
+#         self.dolphin = dolphin
+#
+#     def read(self):
+#         match self.datatype:
+#             case 'float':
+#                 return self.dolphin.read_float(self.addr)
+#             case 'i8':
+#                 return self.dolphin.read_int8(self.addr)
+#             case 'u8':
+#                 return self.dolphin.read_uint8(self.addr)
+#             case 'i16':
+#                 return self.dolphin.read_int16(self.addr)
+#             case 'u16':
+#                 return self.dolphin.read_uint16(self.addr)
+#             case 'i32':
+#                 return self.dolphin.read_int32(self.addr)
+#             case 'u32':
+#                 return self.dolphin.read_uint32(self.addr)
+#     def write(self, val):
+#         match self.datatype:
+#             case 'float':
+#                 self.dolphin.write_float(self.addr, val)
+#             case 'i8':
+#                 self.dolphin.write_int8(self.addr, val)
+#             case 'u8':
+#                 self.dolphin.write_uint8(self.addr, val)
+#             case 'i16':
+#                 self.dolphin.write_int16(self.addr, val)
+#             case 'u16':
+#                 self.dolphin.write_uint16(self.addr, val)
+#             case 'i32':
+#                 self.dolphin.write_int32(self.addr, val)
+#             case 'u32':
+#                 self.dolphin.write_uint32(self.addr, val)

@@ -46,5 +46,3 @@ def load_data_from_csv(file_path):
     return data
 
 
-def is_in_game():
-    return dolphin.read_int8(in_game)
